@@ -1,0 +1,16 @@
+.header{
+	width: 100%;
+	height: 150%;
+	margin-bottom: 20px;
+}
+
+.gambar{
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+
+.gambar img{
+	padding-left: 20px;
+	height: 20px;
+}
