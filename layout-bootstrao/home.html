@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<title></title>
+	<script type="text/javascript">
+		var	app =angulas.module("MyApp", ["ngRoute"]);
+		app.config(function($routeProvider){
+			$routeProvider.When('/', {templateUrl;'main.htm'})
+			.When('/about',{templateUrl;'main.htm'})
+			.When('/product',{templateUrl;'product.htm'})
+			.When('/contact',{templateUrl;'contact.htm'})
+		})
+	</script>
+
+</head>
+
+
+<body>
+	<div ng-app="MyApp" class="container-fluid">
+
+		<div class="row header">
+			<div class="col-12">
+				<h1><i class="fas fa-copyright"></i>Title of Web</h1>
+			</div>
+		</div>
+
+		<div class="row menu">
+			<div class="col-12">
+				<a href="#/!">Home</a>::
+				<a href="#/!about">About</a>::
+				<a href="#/!product">Product</a>::
+				<a href="#/!contact">Contact</a>
+			</div>
+		</div>
+
+		<ng-view></ng-view>
+	</div>
+
+
+
+</body>
+</html>
